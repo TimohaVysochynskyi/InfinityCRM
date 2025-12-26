@@ -1,0 +1,406 @@
+.arrow-button {
+  background-color: var(--brand-color);
+  border-radius: 4px;
+  padding: 3px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 20px;
+  background-color: var(--brand-color);
+  border-radius: 15px 15px 0 0;
+  min-height: 64px;
+}
+.block-title {
+  font-size: 24px;
+  color: #fff;
+}
+.block-title__numbers {
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: 700;
+}
+.block-title__icon {
+  width: 38px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+.dropdown__trigger {
+  border: 0;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 22px;
+  border-radius: 10px;
+  padding: 5px 16px;
+  padding-bottom: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.dropdown__trigger .arrow-button {
+  margin-top: 3px;
+}
+
+.dropdown__trigger:focus-visible {
+  outline: 2px solid var(--brand-color);
+  outline-offset: 2px;
+}
+
+.dropdown__value {
+  white-space: nowrap;
+}
+
+.dropdown__menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 200px;
+  padding: 8px;
+  border-radius: 10px;
+  z-index: 2;
+
+  background: var(--accent-color);
+
+  display: none;
+}
+
+.dropdown.is-open .dropdown__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dropdown__option {
+  border: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-align: left;
+
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+}
+
+.dropdown__option:hover,
+.dropdown__option[aria-selected="true"] {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dropdown__option:focus-visible {
+  outline: 2px solid var(--brand-color);
+  outline-offset: 2px;
+}
+
+.table,
+.orders-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table thead th,
+.orders-table thead th {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  padding: 18px 26px 10px 26px;
+}
+
+.table tbody td,
+.orders-table tbody td {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  padding: 6px 26px;
+  vertical-align: top;
+}
+
+.table--spacious thead th {
+  padding: 18px 26px 10px 26px;
+}
+
+.table--spacious tbody td {
+  padding: 6px 26px;
+}
+
+.table--compact thead th {
+  padding: 18px 24px 10px 24px;
+}
+
+.table--compact tbody td {
+  padding: 10px 24px;
+}
+
+.text-link {
+  text-decoration: none;
+}
+
+.text-link--brand {
+  color: var(--brand-color);
+}
+
+.text-link--lg {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.semibold {
+  font-weight: 600;
+}
+.text-link--brand:hover {
+  text-decoration: underline;
+}
+
+.btn,
+.sm-button {
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn--dark,
+.sm-button--dark {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: 2px solid var(--accent-color);
+  min-width: 200px;
+}
+
+.btn--outlined-dark,
+.sm-button--outlined-dark {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  min-width: 360px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 20px;
+  padding: 22px 26px 24px 26px;
+}
+
+.avatar {
+  display: block;
+  object-fit: cover;
+}
+
+.avatar--sm {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.action-tile {
+  display: flex;
+  width: 100%;
+  min-height: 92px;
+  border-radius: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.action-tile__icon {
+  width: 92px;
+  background-color: var(--brand-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 92px;
+}
+
+.action-tile__icon img {
+  width: 42px;
+  height: 42px;
+}
+
+.action-tile__label {
+  display: flex;
+  align-items: center;
+  padding: 0 26px;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--brand-color);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 1024px) {
+  .block-title {
+    font-size: 22px;
+  }
+
+  .table thead th,
+  .orders-table thead th {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-header {
+    padding: 10px 14px;
+    min-height: 58px;
+  }
+
+  .block-title {
+    font-size: 20px;
+  }
+
+  .block-title__numbers {
+    border-radius: 10px;
+    padding: 4px 9px;
+  }
+
+  .block-title__icon {
+    width: 32px;
+  }
+
+  .dropdown__trigger {
+    font-size: 18px;
+    padding: 6px 12px;
+    padding-bottom: 7px;
+  }
+
+  .table thead th,
+  .orders-table thead th {
+    font-size: 20px;
+  }
+
+  .table tbody td,
+  .orders-table tbody td {
+    font-size: 15px;
+  }
+
+  .text-link--lg {
+    font-size: 24px;
+  }
+
+  .action-tile__label {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn,
+  .sm-button {
+    width: 100%;
+  }
+
+  .btn--dark,
+  .sm-button--dark,
+  .btn--outlined-dark,
+  .sm-button--outlined-dark {
+    min-width: 0;
+  }
+
+  .table thead th,
+  .orders-table thead th {
+    font-size: 18px;
+    padding: 14px 16px 10px 16px;
+  }
+
+  .table tbody td,
+  .orders-table tbody td {
+    padding: 8px 16px;
+  }
+
+  .table--spacious {
+    min-width: 720px;
+  }
+
+  .table--compact {
+    min-width: 520px;
+  }
+
+  .card {
+    overflow-x: auto;
+  }
+
+  .action-tile {
+    min-height: 80px;
+  }
+
+  .action-tile__icon {
+    width: 78px;
+    flex-basis: 78px;
+  }
+
+  .action-tile__icon img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .action-tile__label {
+    padding: 0 18px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .block-header {
+    padding: 10px 12px;
+  }
+
+  .dropdown__menu {
+    min-width: 170px;
+  }
+
+  .text-link--lg {
+    font-size: 22px;
+  }
+
+  .person {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .action-tile__label {
+    font-size: 18px;
+  }
+}
