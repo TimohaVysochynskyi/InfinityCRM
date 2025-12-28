@@ -1,6 +1,9 @@
 :root {
   --brand-color: rgba(177, 32, 84, 1);
   --accent-color: rgba(22, 11, 14, 1);
+  --success-color: #0aa75a;
+  --danger-color: #e53935;
+  --rating-star-color: #ffc107;
 }
 
 * {
