@@ -37,6 +37,10 @@
   border-radius: 15px 15px 0 0;
   min-height: 64px;
 }
+.block-header--dark-red {
+  background-color: #881d44;
+  color: #fff;
+}
 .block-title {
   font-size: 24px;
   color: #fff;
@@ -174,7 +178,7 @@
   line-height: 1.1;
 }
 .semibold {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .text-link--brand:hover {
   text-decoration: underline;
@@ -518,6 +522,58 @@
 }
 
 /**** Performance (performance table) ****/
+.performance-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.performance-grid--with-leader {
+  grid-template-columns: 1fr 240px;
+}
+
+.leader {
+  overflow: hidden;
+}
+
+.leader__header {
+  background-color: var(--brand-color);
+  color: #fff;
+  padding: 22px 18px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.leader__content {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.leader__image {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.leader__name {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--accent-color);
+  letter-spacing: 0.8px;
+}
+
 .performance__content {
   padding: 18px 20px 22px 20px;
 }
@@ -530,6 +586,35 @@
   gap: 12px;
 }
 .performance__metric {
+  color: var(--accent-color);
+}
+
+/* TOP10 (operator variant) */
+.table--top10 thead th {
+  font-size: 16px;
+}
+
+.table--top10 thead th:not(:first-child),
+.table--top10 tbody td:not(:first-child) {
+  text-align: center;
+}
+
+.table--top10 tbody td {
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.top10-person {
+  gap: 12px;
+}
+
+.top10__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.top10__metric {
   color: var(--accent-color);
 }
 

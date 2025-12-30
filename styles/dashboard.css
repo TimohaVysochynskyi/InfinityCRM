@@ -29,54 +29,6 @@
   gap: 24px;
 }
 
-.performance-section {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.performance-grid {
-  display: grid;
-  grid-template-columns: 1fr 240px;
-  gap: 20px;
-  align-items: stretch;
-}
-
-.leader {
-  overflow: hidden;
-}
-
-.leader__header {
-  background-color: var(--brand-color);
-  color: #fff;
-  padding: 22px 18px;
-  font-size: 26px;
-  text-align: center;
-}
-
-.leader__content {
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-}
-
-.leader__image {
-  width: 100%;
-  max-width: 220px;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 16px;
-}
-
-.leader__name {
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--accent-color);
-  letter-spacing: 0.8px;
-}
-
 @media (max-width: 1200px) {
   .dashboard-grid {
     grid-template-columns: 1.5fr 1fr;
@@ -102,14 +54,6 @@
   .duty-wrapper {
     grid-column: 1 / -1;
   }
-
-  .performance-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .leader__header {
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -125,14 +69,5 @@
 
   .calendar-section {
     gap: 18px;
-  }
-
-  .performance-section {
-    gap: 18px;
-  }
-
-  .leader__header {
-    font-size: 20px;
-    padding: 18px 16px;
   }
 }

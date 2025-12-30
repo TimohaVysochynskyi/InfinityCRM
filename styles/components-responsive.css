@@ -50,6 +50,15 @@
     height: 20px;
     flex-basis: 20px;
   }
+
+  /**** Performance layout (with leader) ****/
+  .performance-grid--with-leader {
+    grid-template-columns: 1fr;
+  }
+
+  .leader__header {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -225,6 +234,15 @@
   }
   .table--performance tbody td {
     font-size: 16px;
+  }
+
+  .performance-section {
+    gap: 18px;
+  }
+
+  .leader__header {
+    font-size: 20px;
+    padding: 18px 16px;
   }
 
   /**** Rating ****/
